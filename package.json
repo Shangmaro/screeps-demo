@@ -1,0 +1,35 @@
+{
+    "name": "typescript-screeps-tut4",
+    "version": "1.0.0",
+    "description": "Tutorial 4 converted into a TypeScript project",
+    "author": "Shangmaro",
+    "license": "MIT",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "shangmaro/screeps-demo"
+    },
+    "keywords": [
+        "Screeps",
+        "Typescript"
+    ],
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist/index.d.ts"
+    ],
+    "scripts": {
+        "compile": "tsc",
+        "cp": "copyfiles -f dist/main.js C:/Users/asout/AppData/Local/Screeps/scripts/screeps.com/ts3",
+        "build": "rollup -c && npm run cp"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^11.1.0",
+        "@rollup/plugin-node-resolve": "^7.1.3",
+        "@types/lodash": "3.10.2",
+        "@types/screeps": "^3.1.0",
+        "rollup": "^2.6.1",
+        "rollup-plugin-clear": "^2.0.7",
+        "rollup-plugin-typescript2": "^0.27.0",
+        "typescript": "^3.8.3"
+    }
+}
